@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31521.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSP.Test", "Validation\PSP.Test.csproj", "{AAC2A877-3475-489F-869E-1A4585897C74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSP", "PSP\PSP.csproj", "{95D28E45-0047-4F37-B375-6FDC0E5A6625}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSP", "PSP\PSP.csproj", "{95D28E45-0047-4F37-B375-6FDC0E5A6625}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationTests", "ValidationTests\ValidationTests.csproj", "{D573F828-EB56-4B2A-A444-54167B8FF147}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{95D28E45-0047-4F37-B375-6FDC0E5A6625}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95D28E45-0047-4F37-B375-6FDC0E5A6625}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95D28E45-0047-4F37-B375-6FDC0E5A6625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D573F828-EB56-4B2A-A444-54167B8FF147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D573F828-EB56-4B2A-A444-54167B8FF147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D573F828-EB56-4B2A-A444-54167B8FF147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D573F828-EB56-4B2A-A444-54167B8FF147}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

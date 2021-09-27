@@ -4,7 +4,7 @@ namespace PSP
 {
     public class EmailValidator
     {
-        public bool IsValidEmail(string email)
+        public static bool IsValidEmail(string email)
         {
             return true;
         }
