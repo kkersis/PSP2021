@@ -35,9 +35,16 @@ namespace ValidatorsUnitTests
         }
 
         [TestMethod]
+        public void Password_No_Special_Chars_Not_Valid()
+        {
+            var isValid = PasswordChecker.IsValid("SlapTaZoDz12345");
+            Assert.AreEqual(false, isValid, "Password doesnt contain special characters");
+        }
+
+        [TestMethod]
         public void Password_Good_Is_Valid()
         {
-            var isValid = PasswordChecker.IsValid("slapTaZodZiukas13223");
+            var isValid = PasswordChecker.IsValid("slapTaZodZiukas13223!@#%%");
             Assert.AreEqual(true, isValid, "A valid password.");
         }
 

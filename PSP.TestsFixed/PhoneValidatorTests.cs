@@ -35,17 +35,17 @@ namespace ValidatorsUnitTests.Source.UnitTests
         }
 
         [TestMethod]
-        public void Number_International_No_Plus()
+        public void Number_International_No_Plus_Not_Valid()
         {
             var isValid = PhoneValidator.IsValid("37063535327");
-            Assert.AreEqual(true, isValid, "International numbers without a plus");
+            Assert.AreEqual(false, isValid, "International numbers without a plus");
         }
 
         [TestMethod]
-        public void Number_Invalid_First_Char()
+        public void Number_Invalid_First_Char_Not_Valid()
         {
             var isValid = PhoneValidator.IsValid("-37063535327");
-            Assert.AreEqual(true, isValid, "Invalid character at the beginning of the number");
+            Assert.AreEqual(false, isValid, "Invalid character at the beginning of the number");
         }
 
         [TestMethod]
@@ -61,6 +61,5 @@ namespace ValidatorsUnitTests.Source.UnitTests
             var isValid = PhoneValidator.IsValid("+37063535327");
             Assert.AreEqual(true, isValid, "Valid number");
         }
-
     }
 }
