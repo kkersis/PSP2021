@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Projektavimas\Projektavimas.csproj" />
+    <ProjectReference Include="..\PSP\PSP.csproj" />
   </ItemGroup>
 
 </Project>

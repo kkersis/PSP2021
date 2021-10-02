@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSP", "PSP\PSP.csproj", "{9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationTests", "ValidationTests\ValidationTests.csproj", "{D573F828-EB56-4B2A-A444-54167B8FF147}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSP.TestsFixed", "PSP.TestsFixed\PSP.TestsFixed.csproj", "{87E017C2-1641-43C6-A591-B7C60A431C40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSP.TestsFixed", "PSP.TestsFixed\PSP.TestsFixed.csproj", "{87E017C2-1641-43C6-A591-B7C60A431C40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,7 +24,6 @@ Global
 		{D573F828-EB56-4B2A-A444-54167B8FF147}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D573F828-EB56-4B2A-A444-54167B8FF147}.Release|Any CPU.Build.0 = Release|Any CPU
 		{87E017C2-1641-43C6-A591-B7C60A431C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{87E017C2-1641-43C6-A591-B7C60A431C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87E017C2-1641-43C6-A591-B7C60A431C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87E017C2-1641-43C6-A591-B7C60A431C40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
