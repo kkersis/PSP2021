@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31521.260
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSP", "PSP\PSP.csproj", "{95D28E45-0047-4F37-B375-6FDC0E5A6625}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ValidationTests", "ValidationTests\ValidationTests.csproj", "{D573F828-EB56-4B2A-A444-54167B8FF147}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PSP.TestsFixed", "PSP.TestsFixed\PSP.TestsFixed.csproj", "{87E017C2-1641-43C6-A591-B7C60A431C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryImplementation", "LibraryImplementation\LibraryImplementation.csproj", "{75361427-0451-4DA1-A1B2-984B11E15C7C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{87E017C2-1641-43C6-A591-B7C60A431C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87E017C2-1641-43C6-A591-B7C60A431C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87E017C2-1641-43C6-A591-B7C60A431C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75361427-0451-4DA1-A1B2-984B11E15C7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75361427-0451-4DA1-A1B2-984B11E15C7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75361427-0451-4DA1-A1B2-984B11E15C7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75361427-0451-4DA1-A1B2-984B11E15C7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
