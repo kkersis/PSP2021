@@ -12,12 +12,17 @@ namespace LibraryImplementation.Data
     public class UserRepository : IUserRepository
     {
         private readonly IConfiguration _config;
-        private readonly string filePath;
+        private readonly string _filePath;
 
         public UserRepository(IConfiguration config)
         {
             _config = config;
-            filePath = _config.GetValue<string>("FilePathSettings:Default");
+            _filePath = _config.GetValue<string>("FilePathSettings:Default");
+        }
+
+        public UserRepository(string filePath)
+        {
+            _filePath = filePath;
         }
 
         public IEnumerable<User> GetAll()
@@ -37,7 +42,11 @@ namespace LibraryImplementation.Data
             var allUsers = ReadUsersFromFile().ToList();
             if(user.Id == 0) // if creating new
             {
-                var lastId = allUsers.Last().Id;
+                int lastId = 0;
+                if (allUsers.Count != 0)
+                {
+                    lastId = allUsers.Last().Id;
+                }
                 user.Id = lastId + 1;
                 allUsers.Add(user);
             }
@@ -64,7 +73,7 @@ namespace LibraryImplementation.Data
             try
             {
                 var contentsToWriteToFile = JsonConvert.SerializeObject(users);
-                writer = new StreamWriter(filePath, false);
+                writer = new StreamWriter(_filePath, false);
                 writer.Write(contentsToWriteToFile);
             }
             catch (IOException)
@@ -84,7 +93,7 @@ namespace LibraryImplementation.Data
             TextReader reader = null;
             try
             {
-                reader = new StreamReader(filePath);
+                reader = new StreamReader(_filePath);
                 var fileContents = reader.ReadToEnd();
                 return JsonConvert.DeserializeObject<IEnumerable<User>>(fileContents);
             }
